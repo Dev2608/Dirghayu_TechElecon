@@ -1,0 +1,124 @@
+body{
+    background-color: black;   
+}
+@media only screen and (min-width:992px) and (max-width:1250px){
+#logo{
+    position: relative;
+    width: 270px;
+    left: -8px;
+}
+#alogo{
+    margin-right: 0px;
+}
+}
+@media only screen and (min-width:481px) and (max-width:991px){
+    #logo{
+        position: relative;
+        width: 390px;
+        left: 6px;
+    }
+    #alogo{
+        margin-right: 0px;
+    }
+    #dir{
+        --bs-navbar-toggler-font-size: 1rem;
+    }
+    .adir{
+        --bs-nav-link-font-size: 0.75rem;
+    }
+    }
+@media only screen and (max-width:480px){
+    #logo{
+        position: relative;
+        left: 6px;
+        width: 240px;
+    }
+    #alogo{
+        margin-right: 0px;
+    }
+    #dir{
+        --bs-navbar-toggler-font-size: 0.75rem;
+    }
+    .adir{
+        --bs-nav-link-font-size: 0.5rem;
+    }
+    }
+#dir{
+  border: none;
+}
+.lidir{
+    position: relative;
+}
+#uldir1{
+    display: none;
+    background-color: transparent;
+    --bs-dropdown-link-hover-bg: transparent;
+}
+#uldir2{
+    display: none;
+    background-color: transparent;
+    --bs-dropdown-link-hover-bg: transparent;
+}
+.subli{
+    color: white;
+    --bs-dropdown-link-hover-color: #00b8ff;
+    --bs-dropdown-link-active-bg: transparent;
+}
+.adir{
+    color: white;
+}
+.adir:hover{
+     color: rgb(0, 247, 226);
+}
+@media(min-width: 992px){
+   .adir::before {
+content: '';
+position: absolute;
+width: 100%;
+height: 5px;
+top: 0px;
+left: 0px;
+background-color: rgb(0, 247, 226);
+transform: scaleX(0);
+transform-origin: top left;
+transition: transform 0.3s;
+}
+.adir::after {
+content: '';
+position: absolute;
+width: 100%;
+height: 5px;
+bottom: 0px;
+right: 0px;
+background-color: rgb(0, 247, 226);
+transform: scaleX(0);
+transform-origin: bottom right;
+transition: transform 0.3s;
+}
+.adir:hover::before {
+transform-origin: top right;
+transform: scaleX(1);
+}
+.adir:hover::after {
+transform-origin: bottom left;
+transform: scaleX(1);
+}
+#uldir1{
+    right: -3.95rem;
+    --bs-dropdown-border-color: transparent;
+}
+#uldir2{
+    right: -4.5rem;
+    --bs-dropdown-border-color: transparent;
+}
+}
+.footer{
+    color: white;
+}
+.footer:hover{
+    color: rgb(0, 247, 226);
+}
+#footer{
+    border-top: 7px solid blue;
+    box-shadow: 10px 0px 10px 5px blue;
+}
